@@ -54,4 +54,4 @@ jobs:
           docker stop pagamento
           docker rm --force pagamento
           docker run -d -p 8080:8080 --network=rede --name pagamento
-          hector0/pagamento-ci:${{ github.sha }}
+          givil/pagamento-ci:${{ github.sha }}
